@@ -52,3 +52,33 @@ The skill icons used to create a package are sourced from the repository [https:
 </p>
  
 
+
+
+[![enter image description here][3]][1]
+[![enter image description here][4]][1]
+[![enter image description here][5]][1]
+[![enter image description here][6]][1]
+[![enter image description here][7]][1]
+[![enter image description here][8]][1]
+[![enter image description here][9]][1]
+[![enter image description here][10]][1]
+
+
+
+[1]: https://raw.githubusercontent.com/AnMnv/AnMnv.github.io/master/eBook.pdf
+[2]: https://github.com/AnMnv/eBook/blob/main/images/eBook-01.png
+
+[3]: https://i.imgur.com/xlqeFLH.png
+[4]: https://i.imgur.com/AHP8dkK.png
+[5]: https://i.imgur.com/oqQggz2.png
+[6]: https://i.imgur.com/8kEzLZz.png
+[7]: https://i.imgur.com/Tsjo0Ez.png
+[8]: https://i.imgur.com/TF6v5JP.png
+[9]: https://i.imgur.com/nMFYPEh.png
+[10]: https://i.imgur.com/mdAhKtY.png
+
+
+
+
+ 
+
