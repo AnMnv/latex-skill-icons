@@ -1,0 +1,571 @@
+\documentclass[12pt]{article}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm,bindingoffset=0cm]{geometry}
+\usepackage{skillicons}
+\usepackage{multicol}
+ 
+
+\usepackage[dvipsnames]{xcolor}
+ 
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{anyfontsize}
+\usepackage{sectsty}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=red,
+    allbordercolors=red,
+}
+
+\usepackage[most]{tcolorbox}
+\colorlet{LightLavender}{Lavender!40!}
+\colorlet{LightGreen}{black!15!}
+ 
+\tcbset{on line, 
+        boxsep=4pt, left=0pt,right=0pt,top=0pt,bottom=0pt,
+        colframe=white,colback=LightGreen,  
+        highlight math style={enhanced}
+        }
+ 
+
+%%%%%%%%%%%%%%%%%%
+% -- Loading the code block package:
+\usepackage{listings}
+% -- Basic formatting
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{times}
+\setlength{\parindent}{8pt}
+\usepackage{indentfirst}
+% -- Defining colors:
+\usepackage[dvipsnames]{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+% Definig a custom style:
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codepurple},
+    keywordstyle=\color{NavyBlue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize\bfseries,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    % numbers=left,                    
+    % numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+% -- Setting up the custom style:
+\lstset{style=mystyle}
+%%%%%%%%%%%%%%%%%%
+ 
+\begin{document}
+
+
+\begin{center}
+\fontsize{40}{50} \selectfont {{\tcbox{Icon Skills package}}}\\[1cm] \photosymbol[5]{LaTeX-Dark} \\[1cm]
+ 
+\Large \href{https://github.com/AnMnv/latex-skill-icons}{https://github.com/AnMnv/latex-skill-icons}\\[1cm]
+\end{center}
+
+
+
+
+ 
+
+\vspace*{3cm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+\section*{Introduction}
+Welcome to the documentation for \texttt{skillicons} package, a LaTeX package designed to seamlessly integrate skill icons into your documents. With this package, you can easily enhance your documents by incorporating visually appealing skill indicators, perfect for resumes, CVs, or any document requiring skill representation.
+
+
+ 
+\section*{Acknowledgements}
+The skill icons used to create a package are sourced from the repository \href{https://github.com/tandpfun/skill-icons}{https://github.com/tandpfun/skill-icons}.
+
+\section*{Setting}
+\begin{enumerate}
+\item Clone \tcbox{\texttt{skillicons.sty}} file and \tcbox{\texttt{skill-icons}} folder from \href{https://github.com/tandpfun/skill-icons}{https://github.com/tandpfun/skill-icons} into your current directory where your \texttt{main.tex} file is.
+\item Paste \tcbox{\texttt{$\backslash$usepackage\{skillicons\}}} in the preambula (before \texttt{$\backslash$begin\{document\}})
+\item You are ready to go!
+\end{enumerate}
+
+\section*{Usage Example}
+
+ 
+\begin{lstlisting}[language={[latex]TeX}]
+\documentclass[11pt]{report}
+\usepackage{skillicons}
+
+\begin{document}
+\begin{itemize}
+\item[] \photosymbol{JavaScript} I'm proficient in JavaScript.
+\item[] \photosymbol{Python-Dark} Python is one of my core skills.
+\item[] \photosymbol{React-Light} I have experience working with React.
+\item[] \photosymbol{Java-Dark} Java is one of my strong suits.
+\item[] \photosymbol{NodeJS-Light} I'm proficient in Node.js development.
+\item[] \photosymbol{Git} I'm adept at using Git for version control.
+\item[] \photosymbol{MySQL-Dark} SQL is one of the databases languages.
+\item[] \photosymbol{Rust} Rust is a language I've been learning and enjoying lately.
+\end{itemize}
+\end{document}
+\end{lstlisting}
+
+\section*{Result:}
+
+{ \LARGE
+\begin{itemize}
+\item[] \photosymbol{JavaScript} I'm proficient in JavaScript.
+\item[] \photosymbol{Python-Dark} Python is one of my core skills.
+\item[] \photosymbol{React-Light} I have experience working with React.
+\item[] \photosymbol{Java-Dark} Java is one of my strong suits.
+\item[] \photosymbol{NodeJS-Light} I'm proficient in Node.js development.
+\item[] \photosymbol{Git} I'm adept at using Git for version control.
+\item[] \photosymbol{MySQL-Dark} SQL is one of the databases languages.
+\item[] \photosymbol{Rust} Rust is a language I've been learning and enjoying lately.
+\end{itemize}
+}
+\clearpage
+
+
+
+
+\section*{All available icons}
+\begin{multicols}{3}
+\begin{itemize}
+\item[] \photosymbol[3]{Ableton-Dark}  Ableton-Dark
+\item[] \photosymbol[3]{Ableton-Light}  Ableton-Light
+\item[] \photosymbol[3]{ActivityPub-Dark}  ActivityPub-Dark
+\item[] \photosymbol[3]{ActivityPub-Light}  ActivityPub-Light
+\item[] \photosymbol[3]{Actix-Dark}  Actix-Dark
+\item[] \photosymbol[3]{Actix-Light}  Actix-Light
+\item[] \photosymbol[3]{Adonis}  Adonis
+\item[] \photosymbol[3]{AfterEffects}  AfterEffects
+\item[] \photosymbol[3]{AiScript-Dark}  AiScript-Dark
+\item[] \photosymbol[3]{AiScript-Light}  AiScript-Light
+\item[] \photosymbol[3]{AlpineJS-Dark}  AlpineJS-Dark
+\item[] \photosymbol[3]{AlpineJS-Light}  AlpineJS-Light
+\item[] \photosymbol[3]{Anaconda-Dark}  Anaconda-Dark
+\item[] \photosymbol[3]{Anaconda-Light}  Anaconda-Light
+\item[] \photosymbol[3]{AndroidStudio-Dark}  AndroidStudio-Dark
+\item[] \photosymbol[3]{AndroidStudio-Light}  AndroidStudio-Light
+\item[] \photosymbol[3]{Angular-Dark}  Angular-Dark
+\item[] \photosymbol[3]{Angular-Light}  Angular-Light
+\item[] \photosymbol[3]{Ansible}  Ansible
+\item[] \photosymbol[3]{Apollo}  Apollo
+\item[] \photosymbol[3]{Apple-Dark}  Apple-Dark
+\item[] \photosymbol[3]{Apple-Light}  Apple-Light
+\item[] \photosymbol[3]{Appwrite}  Appwrite
+\item[] \photosymbol[3]{Arch-Dark}  Arch-Dark
+\item[] \photosymbol[3]{Arch-Light}  Arch-Light
+\item[] \photosymbol[3]{Arduino}  Arduino
+\item[] \photosymbol[3]{Astro}  Astro
+\item[] \photosymbol[3]{Atom}  Atom
+\item[] \photosymbol[3]{Audition}  Audition
+%\item[] \photosymbol[3]{Autocad-Dark}  AutoCAD-Dark
+\item[] \photosymbol[3]{Autocad-Light}  AutoCAD-Light
+\item[] \photosymbol[3]{AWS-Dark}  AWS-Dark
+\item[] \photosymbol[3]{AWS-Light}  AWS-Light
+\item[] \photosymbol[3]{Azul}  Azul
+\item[] \photosymbol[3]{Azure-Dark}  Azure-Dark
+\item[] \photosymbol[3]{Azure-Light}  Azure-Light
+\item[] \photosymbol[3]{Babel}  Babel
+\item[] \photosymbol[3]{Bash-Dark}  Bash-Dark
+\item[] \photosymbol[3]{Bash-Light}  Bash-Light
+\item[] \photosymbol[3]{Bevy-Dark}  Bevy-Dark
+\item[] \photosymbol[3]{Bevy-Light}  Bevy-Light
+\item[] \photosymbol[3]{BitBucket-Dark}  BitBucket-Dark
+\item[] \photosymbol[3]{BitBucket-Light}  BitBucket-Light
+\item[] \photosymbol[3]{Blender-Dark}  Blender-Dark
+\item[] \photosymbol[3]{Blender-Light}  Blender-Light
+\item[] \photosymbol[3]{Bootstrap}  Bootstrap
+\item[] \photosymbol[3]{BSD-Dark}  BSD-Dark
+\item[] \photosymbol[3]{BSD-Light}  BSD-Light
+\item[] \photosymbol[3]{Bun-Dark}  Bun-Dark
+\item[] \photosymbol[3]{Bun-Light}  Bun-Light
+\item[] \photosymbol[3]{C}  C
+\item[] \photosymbol[3]{Cassandra-Dark}  Cassandra-Dark
+\item[] \photosymbol[3]{Cassandra-Light}  Cassandra-Light
+\item[] \photosymbol[3]{CLion-Dark}  CLion-Dark
+\item[] \photosymbol[3]{CLion-Light}  CLion-Light
+\item[] \photosymbol[3]{Clojure-Dark}  Clojure-Dark
+\item[] \photosymbol[3]{Clojure-Light}  Clojure-Light
+\item[] \photosymbol[3]{Cloudflare-Dark}  Cloudflare-Dark
+\item[] \photosymbol[3]{Cloudflare-Light}  Cloudflare-Light
+\item[] \photosymbol[3]{CMake-Dark}  CMake-Dark
+\item[] \photosymbol[3]{CMake-Light}  CMake-Light
+\item[] \photosymbol[3]{CodePen-Dark}  CodePen-Dark
+\item[] \photosymbol[3]{CodePen-Light}  CodePen-Light
+\item[] \photosymbol[3]{CoffeeScript-Dark}  CoffeeScript-Dark
+\item[] \photosymbol[3]{CoffeeScript-Light}  CoffeeScript-Light
+\item[] \photosymbol[3]{CPP}  CPP
+\item[] \photosymbol[3]{Crystal-Dark}  Crystal-Dark
+\item[] \photosymbol[3]{Crystal-Light}  Crystal-Light
+\item[] \photosymbol[3]{CS}  CS
+\item[] \photosymbol[3]{CSS}  CSS
+\item[] \photosymbol[3]{Cypress-Dark}  Cypress-Dark
+\item[] \photosymbol[3]{Cypress-Light}  Cypress-Light
+\item[] \photosymbol[3]{D3-Dark}  D3-Dark
+\item[] \photosymbol[3]{D3-Light}  D3-Light
+\item[] \photosymbol[3]{Dart-Dark}  Dart-Dark
+\item[] \photosymbol[3]{Dart-Light}  Dart-Light
+\item[] \photosymbol[3]{Debian-Dark}  Debian-Dark
+\item[] \photosymbol[3]{Debian-Light}  Debian-Light
+\item[] \photosymbol[3]{DENO-Dark}  DENO-Dark
+\item[] \photosymbol[3]{DENO-Light}  DENO-Light
+\item[] \photosymbol[3]{DevTo-Dark}  DevTo-Dark
+\item[] \photosymbol[3]{DevTo-Light}  DevTo-Light
+\item[] \photosymbol[3]{Discord}  Discord
+\item[] \photosymbol[3]{DiscordBots}  DiscordBots
+\item[] \photosymbol[3]{DiscordJS-Dark}  DiscordJS-Dark
+\item[] \photosymbol[3]{DiscordJS-Light}  DiscordJS-Light
+\item[] \photosymbol[3]{Django}  Django
+\item[] \photosymbol[3]{Docker}  Docker
+\item[] \photosymbol[3]{DotNet}  DotNet
+\item[] \photosymbol[3]{DynamoDB-Dark}  DynamoDB-Dark
+\item[] \photosymbol[3]{DynamoDB-Light}  DynamoDB-Light
+\item[] \photosymbol[3]{Eclipse-Dark}  Eclipse-Dark
+\item[] \photosymbol[3]{Eclipse-Light}  Eclipse-Light
+\item[] \photosymbol[3]{Elasticsearch-Dark}  Elasticsearch-Dark
+\item[] \photosymbol[3]{Elasticsearch-Light}  Elasticsearch-Light
+\item[] \photosymbol[3]{Electron}  Electron
+\item[] \photosymbol[3]{Elixir-Dark}  Elixir-Dark
+\item[] \photosymbol[3]{Elixir-Light}  Elixir-Light
+\item[] \photosymbol[3]{Elysia-Dark}  Elysia-Dark
+\item[] \photosymbol[3]{Elysia-Light}  Elysia-Light
+\item[] \photosymbol[3]{Emacs}  Emacs
+\item[] \photosymbol[3]{Ember}  Ember
+\item[] \photosymbol[3]{Emotion-Dark}  Emotion-Dark
+\item[] \photosymbol[3]{Emotion-Light}  Emotion-Light
+\item[] \photosymbol[3]{ExpressJS-Dark}  ExpressJS-Dark
+\item[] \photosymbol[3]{ExpressJS-Light}  ExpressJS-Light
+\item[] \photosymbol[3]{FastAPI}  FastAPI
+\item[] \photosymbol[3]{Fediverse-Dark}  Fediverse-Dark
+\item[] \photosymbol[3]{Fediverse-Light}  Fediverse-Light
+\item[] \photosymbol[3]{Figma-Dark}  Figma-Dark
+\item[] \photosymbol[3]{Figma-Light}  Figma-Light
+\item[] \photosymbol[3]{Firebase-Dark}  Firebase-Dark
+\item[] \photosymbol[3]{Firebase-Light}  Firebase-Light
+\item[] \photosymbol[3]{Flask-Dark}  Flask-Dark
+\item[] \photosymbol[3]{Flask-Light}  Flask-Light
+\item[] \photosymbol[3]{Flutter-Dark}  Flutter-Dark
+\item[] \photosymbol[3]{Flutter-Light}  Flutter-Light
+\item[] \photosymbol[3]{Forth}  Forth
+\item[] \photosymbol[3]{Fortran}  Fortran
+\item[] \photosymbol[3]{GameMakerStudio}  GameMakerStudio
+\item[] \photosymbol[3]{Gatsby}  Gatsby
+\item[] \photosymbol[3]{GCP-Dark}  GCP-Dark
+\item[] \photosymbol[3]{GCP-Light}  GCP-Light
+\item[] \photosymbol[3]{Gherkin-Dark}  Gherkin-Dark
+\item[] \photosymbol[3]{Gherkin-Light}  Gherkin-Light
+\item[] \photosymbol[3]{Git}  Git
+\item[] \photosymbol[3]{Github-Dark}  Github-Dark
+\item[] \photosymbol[3]{Github-Light}  Github-Light
+\item[] \photosymbol[3]{GithubActions-Dark}  GithubActions-Dark
+\item[] \photosymbol[3]{GithubActions-Light}  GithubActions-Light
+\item[] \photosymbol[3]{GitLab-Dark}  GitLab-Dark
+\item[] \photosymbol[3]{GitLab-Light}  GitLab-Light
+\item[] \photosymbol[3]{Gmail-Dark}  Gmail-Dark
+\item[] \photosymbol[3]{Gmail-Light}  Gmail-Light
+\item[] \photosymbol[3]{Godot-Dark}  Godot-Dark
+\item[] \photosymbol[3]{Godot-Light}  Godot-Light
+\item[] \photosymbol[3]{GoLang}  GoLang
+\item[] \photosymbol[3]{Gradle-Dark}  Gradle-Dark
+\item[] \photosymbol[3]{Gradle-Light}  Gradle-Light
+\item[] \photosymbol[3]{Grafana-Dark}  Grafana-Dark
+\item[] \photosymbol[3]{Grafana-Light}  Grafana-Light
+\item[] \photosymbol[3]{GraphQL-Dark}  GraphQL-Dark
+\item[] \photosymbol[3]{GraphQL-Light}  GraphQL-Light
+\item[] \photosymbol[3]{GTK-Dark}  GTK-Dark
+\item[] \photosymbol[3]{GTK-Light}  GTK-Light
+\item[] \photosymbol[3]{Gulp}  Gulp
+\item[] \photosymbol[3]{Haskell-Dark}  Haskell-Dark
+\item[] \photosymbol[3]{Haskell-Light}  Haskell-Light
+\item[] \photosymbol[3]{Haxe-Dark}  Haxe-Dark
+\item[] \photosymbol[3]{Haxe-Light}  Haxe-Light
+\item[] \photosymbol[3]{HaxeFlixel-Dark}  HaxeFlixel-Dark
+\item[] \photosymbol[3]{HaxeFlixel-Light}  HaxeFlixel-Light
+\item[] \photosymbol[3]{Heroku}  Heroku
+\item[] \photosymbol[3]{Hibernate-Dark}  Hibernate-Dark
+\item[] \photosymbol[3]{Hibernate-Light}  Hibernate-Light
+\item[] \photosymbol[3]{HTML}  HTML
+\item[] \photosymbol[3]{Htmx-Dark}  Htmx-Dark
+\item[] \photosymbol[3]{Htmx-Light}  Htmx-Light
+\item[] \photosymbol[3]{Idea-Dark}  Idea-Dark
+\item[] \photosymbol[3]{Idea-Light}  Idea-Light
+\item[] \photosymbol[3]{Illustrator}  Illustrator
+\item[] \photosymbol[3]{Instagram}  Instagram
+\item[] \photosymbol[3]{IPFS-Dark}  IPFS-Dark
+\item[] \photosymbol[3]{IPFS-Light}  IPFS-Light
+\item[] \photosymbol[3]{Java-Dark}  Java-Dark
+\item[] \photosymbol[3]{Java-Light}  Java-Light
+\item[] \photosymbol[3]{JavaScript}  JavaScript
+\item[] \photosymbol[3]{Jenkins-Dark}  Jenkins-Dark
+\item[] \photosymbol[3]{Jenkins-Light}  Jenkins-Light
+\item[] \photosymbol[3]{Jest}  Jest
+\item[] \photosymbol[3]{JQuery}  JQuery
+\item[] \photosymbol[3]{Julia-Dark}  Julia-Dark
+\item[] \photosymbol[3]{Julia-Light}  Julia-Light
+\item[] \photosymbol[3]{Kafka}  Kafka
+\item[] \photosymbol[3]{Kali-Dark}  Kali-Dark
+\item[] \photosymbol[3]{Kali-Light}  Kali-Light
+\item[] \photosymbol[3]{Kotlin-Dark}  Kotlin-Dark
+\item[] \photosymbol[3]{Kotlin-Light}  Kotlin-Light
+\item[] \photosymbol[3]{Ktor-Dark}  Ktor-Dark
+\item[] \photosymbol[3]{Ktor-Light}  Ktor-Light
+\item[] \photosymbol[3]{Kubernetes}  Kubernetes
+\item[] \photosymbol[3]{Laravel-Dark}  Laravel-Dark
+\item[] \photosymbol[3]{Laravel-Light}  Laravel-Light
+\item[] \photosymbol[3]{LaTeX-Dark}  LaTeX-Dark
+\item[] \photosymbol[3]{LaTeX-Light}  LaTeX-Light
+\item[] \photosymbol[3]{Less-Dark}  Less-Dark
+\item[] \photosymbol[3]{Less-Light}  Less-Light
+\item[] \photosymbol[3]{LinkedIn}  LinkedIn
+\item[] \photosymbol[3]{Linux-Dark}  Linux-Dark
+\item[] \photosymbol[3]{Linux-Light}  Linux-Light
+\item[] \photosymbol[3]{Lit-Dark}  Lit-Dark
+\item[] \photosymbol[3]{Lit-Light}  Lit-Light
+\item[] \photosymbol[3]{Lua-Dark}  Lua-Dark
+\item[] \photosymbol[3]{Lua-Light}  Lua-Light
+\item[] \photosymbol[3]{Markdown-Dark}  Markdown-Dark
+\item[] \photosymbol[3]{Markdown-Light}  Markdown-Light
+\item[] \photosymbol[3]{Mastodon-Dark}  Mastodon-Dark
+\item[] \photosymbol[3]{Mastodon-Light}  Mastodon-Light
+\item[] \photosymbol[3]{MaterialUI-Dark}  MaterialUI-Dark
+\item[] \photosymbol[3]{MaterialUI-Light}  MaterialUI-Light
+\item[] \photosymbol[3]{Matlab-Dark}  Matlab-Dark
+\item[] \photosymbol[3]{Matlab-Light}  Matlab-Light
+\item[] \photosymbol[3]{Maven-Dark}  Maven-Dark
+\item[] \photosymbol[3]{Maven-Light}  Maven-Light
+\item[] \photosymbol[3]{Mint-Dark}  Mint-Dark
+\item[] \photosymbol[3]{Mint-Light}  Mint-Light
+\item[] \photosymbol[3]{Misskey-Dark}  Misskey-Dark
+\item[] \photosymbol[3]{Misskey-Light}  Misskey-Light
+\item[] \photosymbol[3]{MongoDB}  MongoDB
+\item[] \photosymbol[3]{MySQL-Dark}  MySQL-Dark
+\item[] \photosymbol[3]{MySQL-Light}  MySQL-Light
+\item[] \photosymbol[3]{NeoVim-Dark}  NeoVim-Dark
+\item[] \photosymbol[3]{NeoVim-Light}  NeoVim-Light
+\item[] \photosymbol[3]{NestJS-Dark}  NestJS-Dark
+\item[] \photosymbol[3]{NestJS-Light}  NestJS-Light
+\item[] \photosymbol[3]{Netlify-Dark}  Netlify-Dark
+\item[] \photosymbol[3]{Netlify-Light}  Netlify-Light
+\item[] \photosymbol[3]{NextJS-Dark}  NextJS-Dark
+\item[] \photosymbol[3]{NextJS-Light}  NextJS-Light
+\item[] \photosymbol[3]{Nginx}  Nginx
+\item[] \photosymbol[3]{Nim-Dark}  Nim-Dark
+\item[] \photosymbol[3]{Nim-Light}  Nim-Light
+\item[] \photosymbol[3]{Nix-Dark}  Nix-Dark
+\item[] \photosymbol[3]{Nix-Light}  Nix-Light
+\item[] \photosymbol[3]{NodeJS-Dark}  NodeJS-Dark
+\item[] \photosymbol[3]{NodeJS-Light}  NodeJS-Light
+\item[] \photosymbol[3]{Notion-Dark}  Notion-Dark
+\item[] \photosymbol[3]{Notion-Light}  Notion-Light
+\item[] \photosymbol[3]{Npm-Dark}  Npm-Dark
+\item[] \photosymbol[3]{Npm-Light}  Npm-Light
+\item[] \photosymbol[3]{NuxtJS-Dark}  NuxtJS-Dark
+\item[] \photosymbol[3]{NuxtJS-Light}  NuxtJS-Light
+\item[] \photosymbol[3]{Obsidian-Dark}  Obsidian-Dark
+\item[] \photosymbol[3]{Obsidian-Light}  Obsidian-Light
+\item[] \photosymbol[3]{OCaml}  OCaml
+\item[] \photosymbol[3]{Octave-Dark}  Octave-Dark
+\item[] \photosymbol[3]{Octave-Light}  Octave-Light
+\item[] \photosymbol[3]{OpenCV-Dark}  OpenCV-Dark
+\item[] \photosymbol[3]{OpenCV-Light}  OpenCV-Light
+\item[] \photosymbol[3]{OpenShift}  OpenShift
+\item[] \photosymbol[3]{OpenStack-Dark}  OpenStack-Dark
+\item[] \photosymbol[3]{OpenStack-Light}  OpenStack-Light
+\item[] \photosymbol[3]{p5js}  p5js
+\item[] \photosymbol[3]{Perl}  Perl
+\item[] \photosymbol[3]{Photoshop}  Photoshop
+\item[] \photosymbol[3]{PHP-Dark}  PHP-Dark
+\item[] \photosymbol[3]{PHP-Light}  PHP-Light
+\item[] \photosymbol[3]{PhpStorm-Dark}  PhpStorm-Dark
+\item[] \photosymbol[3]{PhpStorm-Light}  PhpStorm-Light
+\item[] \photosymbol[3]{Pinia-Dark}  Pinia-Dark
+\item[] \photosymbol[3]{Pinia-Light}  Pinia-Light
+\item[] \photosymbol[3]{Pkl-Dark}  Pkl-Dark
+\item[] \photosymbol[3]{Pkl-Light}  Pkl-Light
+\item[] \photosymbol[3]{Plan9-Dark}  Plan9-Dark
+\item[] \photosymbol[3]{Plan9-Light}  Plan9-Light
+\item[] \photosymbol[3]{PlanetScale-Dark}  PlanetScale-Dark
+\item[] \photosymbol[3]{PlanetScale-Light}  PlanetScale-Light
+\item[] \photosymbol[3]{Pnpm-Dark}  Pnpm-Dark
+\item[] \photosymbol[3]{Pnpm-Light}  Pnpm-Light
+\item[] \photosymbol[3]{PostgreSQL-Dark}  PostgreSQL-Dark
+\item[] \photosymbol[3]{PostgreSQL-Light}  PostgreSQL-Light
+\item[] \photosymbol[3]{Postman}  Postman
+\item[] \photosymbol[3]{Powershell-Dark}  Powershell-Dark
+\item[] \photosymbol[3]{Powershell-Light}  Powershell-Light
+\item[] \photosymbol[3]{Premiere}  Premiere
+\item[] \photosymbol[3]{Prisma}  Prisma
+\item[] \photosymbol[3]{Processing-Dark}  Processing-Dark
+\item[] \photosymbol[3]{Processing-Light}  Processing-Light
+\item[] \photosymbol[3]{Prometheus}  Prometheus
+\item[] \photosymbol[3]{Pug-Dark}  Pug-Dark
+\item[] \photosymbol[3]{Pug-Light}  Pug-Light
+\item[] \photosymbol[3]{PyCharm-Dark}  PyCharm-Dark
+\item[] \photosymbol[3]{PyCharm-Light}  PyCharm-Light
+\item[] \photosymbol[3]{Python-Dark}  Python-Dark
+\item[] \photosymbol[3]{Python-Light}  Python-Light
+\item[] \photosymbol[3]{PyTorch-Dark}  PyTorch-Dark
+\item[] \photosymbol[3]{PyTorch-Light}  PyTorch-Light
+\item[] \photosymbol[3]{QT-Dark}  QT-Dark
+\item[] \photosymbol[3]{QT-Light}  QT-Light
+\item[] \photosymbol[3]{R-Dark}  R-Dark
+\item[] \photosymbol[3]{R-Light}  R-Light
+\item[] \photosymbol[3]{RabbitMQ-Dark}  RabbitMQ-Dark
+\item[] \photosymbol[3]{RabbitMQ-Light}  RabbitMQ-Light
+\item[] \photosymbol[3]{Rails}  Rails
+\item[] \photosymbol[3]{RaspberryPi-Dark}  RaspberryPi-Dark
+\item[] \photosymbol[3]{RaspberryPi-Light}  RaspberryPi-Light
+\item[] \photosymbol[3]{React-Dark}  React-Dark
+\item[] \photosymbol[3]{React-Light}  React-Light
+\item[] \photosymbol[3]{ReactiveX-Dark}  ReactiveX-Dark
+\item[] \photosymbol[3]{ReactiveX-Light}  ReactiveX-Light
+\item[] \photosymbol[3]{RedHat-Dark}  RedHat-Dark
+\item[] \photosymbol[3]{RedHat-Light}  RedHat-Light
+\item[] \photosymbol[3]{Redis-Dark}  Redis-Dark
+\item[] \photosymbol[3]{Redis-Light}  Redis-Light
+\item[] \photosymbol[3]{Redux}  Redux
+\item[] \photosymbol[3]{Regex-Dark}  Regex-Dark
+\item[] \photosymbol[3]{Regex-Light}  Regex-Light
+\item[] \photosymbol[3]{Remix-Dark}  Remix-Dark
+\item[] \photosymbol[3]{Remix-Light}  Remix-Light
+\item[] \photosymbol[3]{Replit-Dark}  Replit-Dark
+\item[] \photosymbol[3]{Replit-Light}  Replit-Light
+\item[] \photosymbol[3]{Rider-Dark}  Rider-Dark
+\item[] \photosymbol[3]{Rider-Light}  Rider-Light
+\item[] \photosymbol[3]{RobloxStudio}  RobloxStudio
+\item[] \photosymbol[3]{Rocket}  Rocket
+\item[] \photosymbol[3]{RollupJS-Dark}  RollupJS-Dark
+\item[] \photosymbol[3]{RollupJS-Light}  RollupJS-Light
+\item[] \photosymbol[3]{ROS-Dark}  ROS-Dark
+\item[] \photosymbol[3]{ROS-Light}  ROS-Light
+\item[] \photosymbol[3]{Ruby}  Ruby
+\item[] \photosymbol[3]{Rust}  Rust
+\item[] \photosymbol[3]{Sass}  Sass
+\item[] \photosymbol[3]{Scala-Dark}  Scala-Dark
+\item[] \photosymbol[3]{Scala-Light}  Scala-Light
+\item[] \photosymbol[3]{ScikitLearn-Dark}  ScikitLearn-Dark
+\item[] \photosymbol[3]{SciKitLearn-Light}  SciKitLearn-Light
+\item[] \photosymbol[3]{Selenium}  Selenium
+\item[] \photosymbol[3]{Sentry}  Sentry
+\item[] \photosymbol[3]{Sequelize-Dark}  Sequelize-Dark
+\item[] \photosymbol[3]{Sequelize-Light}  Sequelize-Light
+\item[] \photosymbol[3]{Sketchup-Dark}  Sketchup-Dark
+\item[] \photosymbol[3]{Sketchup-Light}  Sketchup-Light
+\item[] \photosymbol[3]{Solidity}  Solidity
+\item[] \photosymbol[3]{SolidJS-Dark}  SolidJS-Dark
+\item[] \photosymbol[3]{SolidJS-Light}  SolidJS-Light
+\item[] \photosymbol[3]{Spring-Dark}  Spring-Dark
+\item[] \photosymbol[3]{Spring-Light}  Spring-Light
+\item[] \photosymbol[3]{SQLite}  SQLite
+\item[] \photosymbol[3]{StackOverflow-Dark}  StackOverflow-Dark
+\item[] \photosymbol[3]{StackOverflow-Light}  StackOverflow-Light
+\item[] \photosymbol[3]{StyledComponents}  StyledComponents
+\item[] \photosymbol[3]{Sublime-Dark}  Sublime-Dark
+\item[] \photosymbol[3]{Sublime-Light}  Sublime-Light
+\item[] \photosymbol[3]{Supabase-Dark}  Supabase-Dark
+\item[] \photosymbol[3]{Supabase-Light}  Supabase-Light
+\item[] \photosymbol[3]{Svelte}  Svelte
+\item[] \photosymbol[3]{SVG-Dark}  SVG-Dark
+\item[] \photosymbol[3]{SVG-Light}  SVG-Light
+\item[] \photosymbol[3]{Swift}  Swift
+\item[] \photosymbol[3]{Symfony-Dark}  Symfony-Dark
+\item[] \photosymbol[3]{Symfony-Light}  Symfony-Light
+\item[] \photosymbol[3]{TailwindCSS-Dark}  TailwindCSS-Dark
+\item[] \photosymbol[3]{TailwindCSS-Light}  TailwindCSS-Light
+\item[] \photosymbol[3]{Tauri-Dark}  Tauri-Dark
+\item[] \photosymbol[3]{Tauri-Light}  Tauri-Light
+\item[] \photosymbol[3]{TensorFlow-Dark}  TensorFlow-Dark
+\item[] \photosymbol[3]{TensorFlow-Light}  TensorFlow-Light
+\item[] \photosymbol[3]{Terraform-Dark}  Terraform-Dark
+\item[] \photosymbol[3]{Terraform-Light}  Terraform-Light
+\item[] \photosymbol[3]{ThreeJS-Dark}  ThreeJS-Dark
+\item[] \photosymbol[3]{ThreeJS-Light}  ThreeJS-Light
+\item[] \photosymbol[3]{Twitter}  Twitter
+\item[] \photosymbol[3]{TypeScript}  TypeScript
+\item[] \photosymbol[3]{Ubuntu-Dark}  Ubuntu-Dark
+\item[] \photosymbol[3]{Ubuntu-Light}  Ubuntu-Light
+\item[] \photosymbol[3]{Unity-Dark}  Unity-Dark
+\item[] \photosymbol[3]{Unity-Light}  Unity-Light
+\item[] \photosymbol[3]{UnrealEngine}  UnrealEngine
+\item[] \photosymbol[3]{V-Dark}  V-Dark
+\item[] \photosymbol[3]{V-Light}  V-Light
+\item[] \photosymbol[3]{Vala}  Vala
+\item[] \photosymbol[3]{Vercel-Dark}  Vercel-Dark
+\item[] \photosymbol[3]{Vercel-Light}  Vercel-Light
+\item[] \photosymbol[3]{VIM-Dark}  VIM-Dark
+\item[] \photosymbol[3]{VIM-Light}  VIM-Light
+\item[] \photosymbol[3]{VisualStudio-Dark}  VisualStudio-Dark
+\item[] \photosymbol[3]{VisualStudio-Light}  VisualStudio-Light
+\item[] \photosymbol[3]{Vite-Dark}  Vite-Dark
+\item[] \photosymbol[3]{Vite-Light}  Vite-Light
+\item[] \photosymbol[3]{Vitest-Dark}  Vitest-Dark
+\item[] \photosymbol[3]{Vitest-Light}  Vitest-Light
+\item[] \photosymbol[3]{VSCode-Dark}  VSCode-Dark
+\item[] \photosymbol[3]{VSCode-Light}  VSCode-Light
+\item[] \photosymbol[3]{VSCodium-Dark}  VSCodium-Dark
+\item[] \photosymbol[3]{VSCodium-Light}  VSCodium-Light
+\item[] \photosymbol[3]{VueJS-Dark}  VueJS-Dark
+\item[] \photosymbol[3]{VueJS-Light}  VueJS-Light
+\item[] \photosymbol[3]{Vuetify-Dark}  Vuetify-Dark
+\item[] \photosymbol[3]{Vuetify-Light}  Vuetify-Light
+\item[] \photosymbol[3]{WebAssembly}  WebAssembly
+\item[] \photosymbol[3]{Webflow}  Webflow
+\item[] \photosymbol[3]{Webpack-Dark}  Webpack-Dark
+\item[] \photosymbol[3]{Webpack-Light}  Webpack-Light
+\item[] \photosymbol[3]{WebStorm-Dark}  WebStorm-Dark
+\item[] \photosymbol[3]{WebStorm-Light}  WebStorm-Light
+\item[] \photosymbol[3]{WindiCSS-Dark}  WindiCSS-Dark
+\item[] \photosymbol[3]{WindiCSS-Light}  WindiCSS-Light
+\item[] \photosymbol[3]{Windows-Dark}  Windows-Dark
+\item[] \photosymbol[3]{Windows-Light}  Windows-Light
+\item[] \photosymbol[3]{Wordpress}  Wordpress
+\item[] \photosymbol[3]{Workers-Dark}  Workers-Dark
+\item[] \photosymbol[3]{Workers-Light}  Workers-Light
+\item[] \photosymbol[3]{XD}  XD
+\item[] \photosymbol[3]{Yarn-Dark}  Yarn-Dark
+\item[] \photosymbol[3]{Yarn-Light}  Yarn-Light
+\item[] \photosymbol[3]{Yew-Dark}  Yew-Dark
+\item[] \photosymbol[3]{Yew-Light}  Yew-Light
+\item[] \photosymbol[3]{Zig-Dark}  Zig-Dark
+\item[] \photosymbol[3]{Zig-Light}  Zig-Light
+\end{itemize}
+\end{multicols}
+
+\end{document}
