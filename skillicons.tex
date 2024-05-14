@@ -74,6 +74,8 @@
 \fontsize{40}{50} \selectfont {{\tcbox{Icon Skills package}}}\\[1cm] \photosymbol[5]{LaTeX-Dark} \\[1cm]
  
 \Large \href{https://github.com/AnMnv/latex-skill-icons}{https://github.com/AnMnv/latex-skill-icons}\\[1cm]
+
+2024-05-14 version v1.0 
 \end{center}
 
 
@@ -81,7 +83,7 @@
 
  
 
-\vspace*{3cm}
+\vspace*{2cm}
 
 
 
@@ -118,7 +120,7 @@ The skill icons used to create a package are sourced from the repository \href{h
 
 \section*{Setting}
 \begin{enumerate}
-\item Clone \tcbox{\texttt{skillicons.sty}} file and \tcbox{\texttt{skill-icons}} folder from \href{https://github.com/tandpfun/skill-icons}{https://github.com/tandpfun/skill-icons} into your current directory where your \texttt{main.tex} file is.
+\item Clone \tcbox{\texttt{skillicons.sty}} file and \tcbox{\texttt{skill-icons}} folder from \href{https://github.com/AnMnv/latex-skill-icons}{https://github.com/AnMnv/latex-skill-icons} into your current directory where your \texttt{main.tex} file is.
 \item Paste \tcbox{\texttt{$\backslash$usepackage\{skillicons\}}} in the preambula (before \texttt{$\backslash$begin\{document\}})
 \item You are ready to go!
 \end{enumerate}
@@ -146,7 +148,7 @@ The skill icons used to create a package are sourced from the repository \href{h
 
 \section*{Result:}
 
-{ \LARGE
+{ \Large
 \begin{itemize}
 \item[] \photosymbol{JavaScript} I'm proficient in JavaScript.
 \item[] \photosymbol{Python-Dark} Python is one of my core skills.
@@ -156,8 +158,16 @@ The skill icons used to create a package are sourced from the repository \href{h
 \item[] \photosymbol{Git} I'm adept at using Git for version control.
 \item[] \photosymbol{MySQL-Dark} SQL is one of the databases languages.
 \item[] \photosymbol{Rust} Rust is a language I've been learning and enjoying lately.
-\end{itemize}
-}
+\end{itemize}}
+
+\vspace{0.5cm}
+{\LARGE
+\begin{lstlisting}[language={[latex]TeX}]
+By default \photosymbol{Powershell-Dark} you can \photosymbol[2]{NodeJS-Dark} use icons right \photosymbol[3]{Sublime-Dark} inside text lines \photosymbol[4]{StackOverflow-Dark} with or without scale parameter.
+\end{lstlisting}
+
+By default \photosymbol{Powershell-Dark} you can \photosymbol[2]{NodeJS-Dark} use icons right \photosymbol[3]{Sublime-Dark} inside text lines \photosymbol[4]{StackOverflow-Dark} with or without scale parameter.}
+
 \clearpage
 
 
@@ -567,5 +577,8 @@ The skill icons used to create a package are sourced from the repository \href{h
 \item[] \photosymbol[3]{Zig-Light}  Zig-Light
 \end{itemize}
 \end{multicols}
+
+\section*{License}
+This package and its included icon images, taken from \href{https://github.com/tandpfun/skill-icons}{https://github.com/tandpfun/skill-icons}, are released under the \href{https://opensource.org/license/mit}{MIT} license.
 
 \end{document}
