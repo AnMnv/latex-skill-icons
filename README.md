@@ -77,7 +77,7 @@ The skill icons used to create a package are sourced from the repository [https:
 [9]: https://i.imgur.com/nMFYPEh.png
 [10]: https://i.imgur.com/mdAhKtY.png
 
-
+# Full list is available on https://github.com/LelouchFR/skill-icons
 
 
  
