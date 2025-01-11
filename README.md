@@ -18,7 +18,7 @@ Welcome to the documentation for `skillicons` package, a LaTeX package designed 
 The skill icons used to create a package are sourced from the repository [https://github.com/tandpfun/skill-icons](https://github.com/tandpfun/skill-icons).
 
 ## Author
-This package was created by An Mnv ([https://github.com/AnMnv](https://github.com/AnMnv)).
+This package was created by Anton Mnatsakanov ([https://github.com/AnMnv](https://github.com/AnMnv)).
 
 
 ## License
