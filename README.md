@@ -21,6 +21,14 @@ Welcome to the documentation for `skillicons` package, a LaTeX package designed 
 ## Acknowledgements
 The skill icons used to create a package are sourced from the repository [https://github.com/tandpfun/skill-icons](https://github.com/tandpfun/skill-icons).
 
+## Author
+This package was created by An Mnv ([https://github.com/AnMnv](https://github.com/AnMnv)).
+
+
+## License
+This package is distributed under the MIT License. See the `LICENSE` file for details.
+
+
 ## Setting
 1. Clone `skillicons.sty` file and `skill-icons` folder from [https://github.com/tandpfun/skill-icons](https://github.com/tandpfun/skill-icons) into your current directory where your `main.tex` file is.
 2. Paste `\usepackage{skillicons}` in the preamble (before `\begin{document}`)
