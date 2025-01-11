@@ -10,10 +10,6 @@
 <p align="center">
   <img src="https://i.imgur.com/X8E0RnO.png" />
 </p>
-
- 
-[![](https://img.shields.io/static/v1?label=&message=https://github.com/AnMnv/latex-skill-icons&color=red)](https://github.com/AnMnv/latex-skill-icons) 
-[![](https://img.shields.io/static/v1?label=&message=https://github.com/AnMnv/latex-skill-icons&color=red)](https://github.com/AnMnv/latex-skill-icons)
  
 ## Introduction
 Welcome to the documentation for `skillicons` package, a LaTeX package designed to seamlessly integrate skill icons into your documents. With this package, you can easily enhance your documents by incorporating visually appealing skill indicators, perfect for resumes, CVs, or any document requiring skill representation.
