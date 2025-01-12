@@ -82,7 +82,3 @@ This package is distributed under the MIT License. See the `LICENSE` file for de
 [10]: https://i.imgur.com/mdAhKtY.png
 
 # Full list is available on https://github.com/LelouchFR/skill-icons
-
-
- 
-
